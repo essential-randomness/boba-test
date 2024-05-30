@@ -14,13 +14,14 @@
   services.bobaboard = {
     enable = true;
     database = {
-      user = "bobaboard";
-      host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
-      local = false;
-      port = 25060;
-      name = "bobadb";
-      passwordFile = "/var/lib/bobaboard/db-password";
-      sslRootCertPath = "/var/lib/bobaboard/db-ca";
+      user = "boba-test";
+      # host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
+      local = true;
+      # port = 25060;
+      port = 5432;
+      name = "boba-test";
+      # passwordFile = "/var/lib/bobaboard/db-password";
+      # sslRootCertPath = "/var/lib/bobaboard/db-ca";
       seed = true;
     };
 
@@ -29,9 +30,9 @@
       # server. It can be the address of any realm (or of no realm),
       # as long as the DNS is mapped.
       backend = {
-        address = "fandom-coders.boba.social";
+        address = "api.bobaboard.gay";
       };
-      name =  "^(?<subdomain>.+)boba\.social$";
+      name =  "^(?<subdomain>.+)bobaboard\.gay$";
     };
 
     firebaseCredentials = "/var/lib/bobaboard/firebase-sdk.json";
