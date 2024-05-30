@@ -1,7 +1,7 @@
 {pkgs, ...} : 
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    nixUnstable
+    # nixUnstable
     deploy-rs
   ];
 }

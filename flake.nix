@@ -2,8 +2,8 @@
   description = "Boba test";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
+    # unstable.url = "github:nixos/nixpkgs/nixos-unstable";
   
     deploy-rs = {
       url = "github:serokell/deploy-rs";
@@ -22,7 +22,10 @@
   
     snowfall-lib = {
       url = "github:snowfallorg/lib";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-utils-plus.url = "github:fl42v/flake-utils-plus";
+      };
     };
   };
 
