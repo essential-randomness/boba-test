@@ -1,5 +1,5 @@
 {
-  description = "Boba Extras";
+  description = "Boba test";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
@@ -15,15 +15,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   
-    bobaboard = {
-      url = "github:bobaboard/boba-nixos";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    boba-frontend = {
-      url = "github:bobaboard/boba-frontend";
-      inputs.nixpkgs.follows = "nixpkgs";
-     };
-
+    # bobaboard = {
+    #   url = "github:bobaboard/boba-nixos";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+  
     snowfall-lib = {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -38,7 +34,7 @@
 
       # Configuration for deploy-rs
       deploy.nodes = {
-        boba-social = {
+        boba-gay = {
           hostname = "boba-gay";
           profiles.system = {
             path = inputs.deploy-rs.lib.x86_64-linux.activate.nixos inputs.self.nixosConfigurations.boba-gay;
