@@ -12,32 +12,32 @@
     22
   ];
 
-  # services.bobaboard = {
-  #   enable = true;
-  #   database = {
-  #     user = "boba-test";
-  #     # host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
-  #     local = true;
-  #     # port = 25060;
-  #     port = 5432;
-  #     name = "boba-test";
-  #     # passwordFile = "/var/lib/bobaboard/db-password";
-  #     # sslRootCertPath = "/var/lib/bobaboard/db-ca";
-  #     seed = true;
-  #   };
+  services.bobaboard = {
+    enable = true;
+    database = {
+      user = "boba-test";
+      # host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
+      local = true;
+      # port = 25060;
+      port = 5432;
+      name = "boba-test";
+      # passwordFile = "/var/lib/bobaboard/db-password";
+      # sslRootCertPath = "/var/lib/bobaboard/db-ca";
+      seed = true;
+    };
 
-  #   server = {
-  #     # This has to be an address whose DNS is mapped to this
-  #     # server. It can be the address of any realm (or of no realm),
-  #     # as long as the DNS is mapped.
-  #     backend = {
-  #       address = "api.bobaboard.gay";
-  #     };
-  #     name =  "^(?<subdomain>.+)bobaboard\.gay$";
-  #   };
+    server = {
+      # This has to be an address whose DNS is mapped to this
+      # server. It can be the address of any realm (or of no realm),
+      # as long as the DNS is mapped.
+      backend = {
+        address = "api.bobaboard.gay";
+      };
+      name =  "^(?<subdomain>.+)bobaboard\.gay$";
+    };
 
-  #   firebaseCredentials = "/var/lib/bobaboard/firebase-sdk.json";
-  # };
+    firebaseCredentials = "/var/lib/bobaboard/firebase-sdk.json";
+  };
 
   programs.git.enable = true;
   programs.zsh = {
