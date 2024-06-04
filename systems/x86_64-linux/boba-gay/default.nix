@@ -4,7 +4,7 @@
     # Generated at runtime by nixos-infect
     ./networking.nix
     inputs.vscode-server.nixosModules.default
-    inputs.bobaboard.nixosModules.default
+    inputs.bobaboard
   ];
 
   services.openssh.enable = true;
