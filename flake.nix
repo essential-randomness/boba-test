@@ -49,7 +49,7 @@
   
       systems.modules = with inputs; [
         vscode-server.nixosModules.default
-        bobaboard.nixosModules.bobaboard
+        # bobaboard.nixosModules.bobaboard
       ];
 
       # These checks will run before deployment to check that everything
