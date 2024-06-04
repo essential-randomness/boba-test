@@ -15,10 +15,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   
-    # bobaboard = {
-    #   url = "github:bobaboard/boba-nixos";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    bobaboard = {
+      url = "github:bobaboard/boba-nixos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   
     snowfall-lib = {
       url = "github:snowfallorg/lib";
