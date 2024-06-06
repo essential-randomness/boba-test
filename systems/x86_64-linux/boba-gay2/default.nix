@@ -14,7 +14,7 @@
   services.bobaboard = {
     enable = true;
     database = {
-      user = "boba-test";
+      user = "postgres";
       # host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
       local = true;
       # port = 25060;
