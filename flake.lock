@@ -58,11 +58,11 @@
         "vscode-server": "vscode-server"
       },
       "locked": {
-        "lastModified": 1717637764,
-        "narHash": "sha256-BgN6YlHLAeYBPUmG+OrzRMxukU0J/DohcPj2CIuYrbI=",
+        "lastModified": 1717639650,
+        "narHash": "sha256-4UFqcr2gAs7/rxC4COeM9RVUM/2quZfOe4zt6Uzy1aY=",
         "owner": "bobaboard",
         "repo": "boba-nixos",
-        "rev": "12f95244ee5fa445829c6c668385de4bfa33174c",
+        "rev": "20ae9346327b3d4938d9558de6469c3e83e27940",
         "type": "github"
       },
       "original": {
