@@ -15,7 +15,7 @@
     enable = true;
     database = {
       user = "postgres";
-      # host = "private-big-global-dboi-do-user-12927016-0.c.db.ondigitalocean.com";
+      host = "127.0.0.1";
       local = true;
       # port = 25060;
       port = 5432;
