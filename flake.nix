@@ -21,7 +21,7 @@
     };
   
     snowfall-lib = {
-      url = "github:snowfallorg/lib";
+      url = "github:snowfallorg/lib/dev";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-utils-plus.url = "github:fl42v/flake-utils-plus";
@@ -49,7 +49,7 @@
   
       systems.modules = with inputs; [
         vscode-server.nixosModules.default
-        # bobaboard.nixosModules.bobaboard
+        bobaboard.nixosModules."bobaboard/service"
       ];
 
       # These checks will run before deployment to check that everything
