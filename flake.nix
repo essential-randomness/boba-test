@@ -47,9 +47,9 @@
         };
       };
   
-      systems.modules = with inputs; [
+      systems.modules.nixos = with inputs; [
         vscode-server.nixosModules.default
-        bobaboard.nixosModules."bobaboard/service"
+        bobaboard.nixosModules."services/bobaboard"
       ];
 
       # These checks will run before deployment to check that everything

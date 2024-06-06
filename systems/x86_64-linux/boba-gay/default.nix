@@ -1,10 +1,8 @@
-{ pkgs, inputs,  ... }: {
+{ pkgs, inputs, lib, config, ... }: {
   imports = [
     ./hardware.nix
     # Generated at runtime by nixos-infect
     ./networking.nix
-    inputs.vscode-server.nixosModules.default
-    inputs.bobaboard.nixosModules.bobaboard
   ];
 
   services.openssh.enable = true;
