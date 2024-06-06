@@ -20,7 +20,7 @@
       # port = 25060;
       # passwordFile = "/var/lib/bobaboard/db-password";
       # sslRootCertPath = "/var/lib/bobaboard/db-ca";
-      seed = true;
+      seed = false;
     };
 
     server = {
