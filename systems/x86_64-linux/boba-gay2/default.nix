@@ -18,8 +18,6 @@
       host = "127.0.0.1";
       local = true;
       # port = 25060;
-      port = 5432;
-      name = "bobadb";
       # passwordFile = "/var/lib/bobaboard/db-password";
       # sslRootCertPath = "/var/lib/bobaboard/db-ca";
       seed = true;
