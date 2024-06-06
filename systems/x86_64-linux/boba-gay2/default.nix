@@ -1,4 +1,4 @@
-{ pkgs, inputs,  ... }: {
+{ pkgs, inputs, lib, config, ... }: {
   imports = [
     ./hardware.nix
     # Generated at runtime by nixos-infect
